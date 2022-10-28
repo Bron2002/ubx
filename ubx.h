@@ -27,6 +27,24 @@ typedef struct
 
 typedef enum
 {
+    UBX_CLASS_NAV = 0x01,
+    UBX_CLASS_RXM = 0x02,
+    UBX_CLASS_INF = 0x04,
+    UBX_CLASS_ACK = 0x05,
+    UBX_CLASS_CFG = 0x06,
+    UBX_CLASS_UPD = 0x09,
+    UBX_CLASS_MON = 0x0A,
+    UBX_CLASS_AID = 0x0B,
+    UBX_CLASS_TIM = 0x0D,
+    UBX_CLASS_ESF = 0x10,
+    UBX_CLASS_MGA = 0x13,
+    UBX_CLASS_LOG = 0x21,
+    UBX_CLASS_SEC = 0x27,
+    UBX_CLASS_HNR = 0x28
+} Ubx_class;
+
+typedef enum
+{
     noFix,
     deadReckoningOnly,
     _2d_fix,
